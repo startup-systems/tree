@@ -3,10 +3,13 @@ import subprocess
 
 
 def tree_correct(path):
-    subprocess.run(['tree', path, '> /tmp/output.txt'])
-    return open('output.txt').read()
+    with open("/tmp/output.txt", "wb") as out, open("/tmp/err.txt", "wb") as err:
+        subprocess.Popen("tree {}".format(path), stdout=out, stderr=err)
+    return open('/tmp/output.txt').read()
 
 
 def pytree(path):
-    subprocess.run(['./pytree.py', path, '> /tmp/pytree.txt'])
-    return open('pytree.txt').read()
+    with open("/tmp/pytree.txt", "wb") as out, open("/tmp/pyerr.txt", "wb") as err:
+        subprocess.Popen("./pytree.py {}".format(path), stdout=out, stderr=err)
+    return open('/tmp/pytree.txt').read()
+
