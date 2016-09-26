@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import sys,os
 from collections import defaultdict
-# helpful hints https://en.wikipedia.org/wiki/Box-drawing_character
 
 class Node(object):
 
@@ -23,7 +22,7 @@ class Tree(object):
 
     def walk(self):
         """
-        Walks starting from root and populates self.tree
+        Walks starting from root and populates self.root_node
         :return:
         """
         pass
@@ -31,6 +30,7 @@ class Tree(object):
     def __str__(self):
         """
         Print the tree representations
+        helpful hints https://en.wikipedia.org/wiki/Box-drawing_character
         :return:
         """
         return "Hello World"
