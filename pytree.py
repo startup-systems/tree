@@ -43,5 +43,5 @@ def main(root,regex=None,collect_metadata=False):
 if __name__ == '__main__':
     import os
     # main(sys.argv[1])
-    # just for demo
+    # just for demo (NEVER EVER USE os.system like this, its a  security risk!)
     os.system('tree {}'.format(' '.join(sys.argv[1:])))

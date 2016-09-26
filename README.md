@@ -7,3 +7,5 @@
 
  Note: you cannot spawn a subprocess or shell, you must use os module. 
  For bonus regex matching must be done in python. 
+
+Run `pytest` the tests should pass since it simply runs tree via python.
