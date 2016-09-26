@@ -1,6 +1,7 @@
+#!/usr/bin/env python
 import sys,os
 from collections import defaultdict
-
+# helpful hints https://en.wikipedia.org/wiki/Box-drawing_character
 
 class Node(object):
 
@@ -32,11 +33,15 @@ class Tree(object):
         Print the tree representations
         :return:
         """
-        pass
+        return "Hello World"
 
 
 def main(root,regex=None,collect_metadata=False):
     dir_tree = Tree(root)
+    print(dir_tree)
 
 if __name__ == '__main__':
-    pass
+    import os
+    # main(sys.argv[1])
+    # just for demo
+    os.system('tree {}'.format(' '.join(sys.argv[1:])))
