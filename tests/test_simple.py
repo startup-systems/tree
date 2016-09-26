@@ -1,4 +1,5 @@
 import helpers
+import hashlib
 import os
 import pytest
 import tempfile
@@ -6,4 +7,6 @@ import tempfile
 
 def test_compare():
     path = 'examples'
-    assert helpers.tree_correct(path) == helpers.pytree(path)
+    correct = helpers.tree_correct(path)
+    output = helpers.pytree(path)
+    assert correct == output
