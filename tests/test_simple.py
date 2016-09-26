@@ -9,4 +9,4 @@ def test_compare():
     path = 'examples'
     correct = helpers.tree_correct(path)
     output = helpers.pytree(path)
-    assert len(correct) == len(output)
+    assert correct == output
