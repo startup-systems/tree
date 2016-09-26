@@ -5,5 +5,5 @@ import tempfile
 
 
 def test_compare():
-    path = '../'
+    path = 'examples'
     assert helpers.tree_correct(path) == helpers.pytree(path)
