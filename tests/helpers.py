@@ -3,9 +3,9 @@ import subprocess
 
 
 def tree_correct(path):
-    dest = '> correct_output.txt'
+    dest = '> tree_output.txt'
     subprocess.run(['tree', path, dest])
-    return open('correct_output.txt').read()
+    return open('tree_output.txt').read()
 
 
 def pytree(path):

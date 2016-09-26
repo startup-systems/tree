@@ -1,6 +1,6 @@
 # Tree
 
-
+- Make sure tree command is installed, using apt; E.g. `sudo apt install tree`
 - Implement tree command in python
 - (Bonus) Collect extra metadata about each file and store it.
 - (Bonus) Match file/foldernames based on some regular expression pattern, e.g. all *.jpeg files.
