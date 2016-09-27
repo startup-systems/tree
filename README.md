@@ -9,3 +9,5 @@
  For bonus regex matching must be done in python. 
 
 Run `pytest` the tests should pass since it simply runs tree via python.
+
+[![Build Status](https://travis-ci.org/startup-systems/tree.svg?branch=master)](https://travis-ci.org/startup-systems/tree)
