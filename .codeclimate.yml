@@ -5,6 +5,8 @@ engines:
     config:
       languages:
       - python
+    exclude_paths:
+    - tests/
   pep8:
     enabled: true
   radon:
@@ -12,5 +14,3 @@ engines:
 ratings:
   paths:
   - "**.py"
-# exclude_paths:
-# - tests/
