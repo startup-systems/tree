@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-from collections import defaultdict
-import os
+import subprocess
 import sys
 
 
@@ -43,7 +42,5 @@ def main(root, regex=None, collect_metadata=False):
     print(dir_tree)
 
 if __name__ == '__main__':
-    import os
-    # main(sys.argv[1])
-    # just for demo (NEVER EVER USE os.system like this, its a  security risk!)
-    os.system('tree {}'.format(' '.join(sys.argv[1:])))
+    # just for demo
+    subprocess.run(['tree'] + sys.argv[1:])
