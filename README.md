@@ -54,8 +54,10 @@ python3 pytree.py [path]
 
 ## Requirements
 
-* `pytest` tests passing (**100%** total)
+* `pytest` tests passing (**90%** total)
+* Code Climate checks passing (**10%**)
 * All of the logic must exist in Python. In other words, you may not use any of the following modules/functions:
+    * `os.popen()`
     * `os.spawn*()`
     * `os.system()`
     * `subprocess`
@@ -69,6 +71,17 @@ Run the following from this directory:
 sudo apt update
 sudo apt install tree
 pip3 install -r requirements.txt
-# run the tests
+# run the pytests
 pytest -v
+# run the pep8 checks
+pep8
 ```
+
+### Code Climate checks
+
+If you want to try running these locally:
+
+1. [Install Docker](https://docs.docker.com/engine/installation/linux/ubuntulinux/) (follow the "Ubuntu Xenial 16.04 (LTS)" instructions)
+1. Run the [Code Climate CLI](https://github.com/codeclimate/codeclimate#readme).
+
+Note that **this is advanced**, so don't worry if you have trouble getting it running.
