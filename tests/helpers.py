@@ -1,6 +1,6 @@
-import os,time
+import os
 import subprocess
-
+import time
 
 def tree_correct(path):
     with open("/tmp/output.txt", "wb") as out, open("/tmp/err.txt", "wb") as err:
@@ -17,4 +17,3 @@ def pytree(path):
     with open('/tmp/pytree.txt') as result:
         output = result.read()
     return output
-
