@@ -49,6 +49,8 @@ While the actual `tree` command accepts a bunch of optional flags/options, we ar
 Your script should produce identical output, but run with
 
 ```bash
+./pytree.py [path]
+# which is equivalent to
 python3 pytree.py [path]
 ```
 
