@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-import sys,os
-from collections import defaultdict
+import subprocess
+import sys
+
 
 class Node(object):
 
@@ -12,7 +13,7 @@ class Node(object):
 
 class Tree(object):
 
-    def __init__(self,root):
+    def __init__(self, root):
         """
         :param root: Root directory
         """
@@ -36,12 +37,10 @@ class Tree(object):
         return "Hello World"
 
 
-def main(root,regex=None,collect_metadata=False):
+def main(root, regex=None, collect_metadata=False):
     dir_tree = Tree(root)
     print(dir_tree)
 
 if __name__ == '__main__':
-    import os
-    # main(sys.argv[1])
-    # just for demo (NEVER EVER USE os.system like this, its a  security risk!)
-    os.system('tree {}'.format(' '.join(sys.argv[1:])))
+    # just for demo
+    subprocess.run(['tree'] + sys.argv[1:])
