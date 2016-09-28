@@ -56,6 +56,7 @@ python3 pytree.py [path]
 
 ## Requirements
 
+* Put your code into [`pytree.py`](pytree.py)
 * `pytest` tests passing (**90%** total)
 * Code Climate checks passing (**10%**)
 * All of the logic must exist in Python. In other words, you may not use any of the following modules/functions:
