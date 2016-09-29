@@ -65,6 +65,18 @@ python3 pytree.py [path]
     * `os.system()`
     * `subprocess`
 
+## Dealing with unicode
+
+`tree` uses some [unicode](https://www.w3.org/International/questions/qa-what-is-encoding) characters to create the layout and draw the lines. This includes [non-breaking spaces](https://en.wikipedia.org/wiki/Non-breaking_space) (tested with `tree` v1.7.0), highlighted below:
+
+![non-breaking spaces](non-breaking-spaces.png)
+
+Working with unicode/encodings can be challenging, but in short, we recommend copying-and-pasting the special characters directly from the `tree` output in your terminal to strings in your Python script.
+
+* [More information about unicode in Python](https://docs.python.org/3/howto/unicode.html#the-string-type)
+* [A useful site for looking up unicode values](http://unicodelookup.com/)
+    * You can paste unicode characters directly in the search box to learn their corresponding name and values
+
 ## Running tests locally
 
 Run the following from this directory:
