@@ -31,10 +31,3 @@ def test_with_path():
     expected = helpers.run_and_capture(['tree', path])
     actual = helpers.run_and_capture(['./pytree.py', path])
     assert expected == actual
-
-
-@pytest.mark.score(30)
-def test_without_path():
-    expected = helpers.run_and_capture(['tree'])
-    actual = helpers.run_and_capture(['./pytree.py'])
-    assert expected == actual
