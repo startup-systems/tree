@@ -17,7 +17,7 @@ def test_num_files():
     assert "3 files" in output
 
 
-@pytest.mark.score(10)
+@pytest.mark.score(5)
 def test_file_dir_names():
     path = 'examples/flat'
     output = helpers.run_and_capture(['./pytree.py', path])
@@ -34,7 +34,7 @@ def test_file_dir_names():
     ]
 
 
-@pytest.mark.score(20)
+@pytest.mark.score(15)
 def test_full_output():
     path = 'examples/flat'
     expected = helpers.run_and_capture(['tree', path])

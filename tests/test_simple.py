@@ -37,7 +37,7 @@ def test_file_dir_names():
     ]
 
 
-@pytest.mark.score(20)
+@pytest.mark.score(15)
 def test_full_output():
     path = 'examples/simple'
     expected = helpers.run_and_capture(['tree', path])
