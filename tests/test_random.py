@@ -9,8 +9,8 @@ import tempfile
 @pytest.mark.score(5)
 def test_output():
     with tempfile.TemporaryDirectory(suffix='-tree') as tmpdirname:
-        num_files = random.randint(1, 10)
-        file_numbers = random.sample(range(0, 100), num_files)
+        num_files = random.randint(2, 8)
+        file_numbers = random.sample(range(1, 9), num_files)
         file_numbers.sort()
 
         for file_num in file_numbers:
