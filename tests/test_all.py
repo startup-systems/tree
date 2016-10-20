@@ -6,5 +6,5 @@ import pytest
 def test_without_path(monkeypatch):
     monkeypatch.chdir('examples')
     expected = helpers.run_and_capture(['tree'])
-    actual = helpers.run_and_capture(['../pytree.py'])
+    actual = helpers.run_and_capture(['./../pytree.py'])
     assert expected == actual
